@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon_io/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon_io/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon_io/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'img/favicon_io/site.webmanifest' %}">
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/particles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/grayscale.min.css' %}">
+
+
+  <title>Scott Olson</title>
+
+</head>
+
+<body id="page-top">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger so-header-link" href="#page-top">so.dev</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio-tag">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="blog/">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="intro-title mb-4">scott olson</h1>
+        <span class="text-slider-items text-white mb-4">Engineer, Developer, Scientist, Outdoorsman</span>
+        <strong class="text-slider"></strong>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">About me.</h2>
+          <hr class="my-4 about-me-bar">
+          <p class="text-white-50 h5">Software engineer, scientist, avid outdoorsman, passionate learner with a background in analytical science, engineering, and environmental work. I am currently looking for opportunities in software engineering around the SF Bay Area and beyond. Check out my <a href="/blog">blog</a> section to see what I am up to. </p>
+          <hr class="my-4">
+        </div>
+      </div>
+      <!-- <img src="{% static '' %}" class="img-fluid" alt=""> -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-dark">
+    <div class="container">
+      <h2 id="portfolio-tag" class="text-white-50 text-center justify-content-center mb-4">Portfolio.</h2>
+      <hr class="my-4 about-me-bar">
+
+      <!-- Project Row One -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="{% static 'img/project_img/Visualizations/prime_gap_polar_graph.png' %}" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">
+                  <a href="https://www.github.com/Scott-Olson/Visualizations">Visualizations</a>
+                </h4>
+                <p class="mb-0 text-white-50">An assembly of individual math visualizations featuring sequences from the <a href="https://www.oeis.org">Online Encyclopedia of Integer Sequences </a> and other math explorations. This will also be the repo where I will upload solutions for <a href="https://projecteuler.net">Project Euler</a> visualizatoins as well</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="{% static 'img/project_img/PUBG_stats/testErangel.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-6 ">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">
+                  <a href="https://www.github.com/Scott-Olson/PUBG_Stats">PUBG Stats</a>
+                </h4>
+                <p class="mb-0 text-white-50"> A Django project that uses the PUBG api to scrape player statistics from matches compiling the data to create averages for players games. A large data set is used to compile a heat map of player death locations showing locations of interest and value. </p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Three Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="{% static 'img/project_img/TwitchStitch/TwitchStitch.png' %}" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">
+                  <a href="https://www.github.com/Scott-Olson/multiview">TwitchStitch</a>
+                </h4>
+                <p class="mb-0 text-white-50"> A project built in MEAN for a hackathon. This allows a user to watch multiple Twitch streams together. Designed for watching tournament and squad oriented games to see the same action from multiple persepectives. This feature has since been implemented on the official website.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 about-me-bar">
+      <!-- <div class="row justify-content-center no-gutters">
+        <a class="btn btn-dark my-4 text-center justify-content-center" href="demos/">View some live demos</a>
+      </div>
+    </div> -->
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-2 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">scotteolson3@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fab fa-github text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">GitHub</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="https://www.github.com/scott-olson">Scott-Olson</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fab fa-linkedin text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">LinkedIn</h4>
+              <hr class="my-4"> 
+              <div class="small text-black-50">
+                <a href="https://www.linkedin.com/in/scotteolson">ScottEOlson</a>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Scott Olson 2020
+    </div>
+  </footer>
+
+<!-- 
+  <div class="particle-container">
+    <div class="header"  id="particles-js">
+      <div class="panel" id="title-card">
+        <h1><p>scottolson.dev</p></h1> -->
+        <!-- <h3>Engineer | Scientist</h3> -->
+      <!-- </div>
+    </div>
+  </div> -->
+  
+  <!-- Particles JS -->
+  <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+  <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
+  <!-- <script src="{% static 'js/particles.js' %}"></script> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/grayscale.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+
+  </body>
+</html>

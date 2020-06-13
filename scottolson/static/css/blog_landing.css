@@ -1,0 +1,46 @@
+/*.blog-body{
+	padding-top: 6rem;
+}*/
+
+.masthead-blog{
+	height: 25% !important;
+	padding: 3rem 0 !important;
+	min-height: 6rem !important;
+	overflow: auto !important;
+}
+
+.masthead-blog h1{
+	font-size: 1.5rem !important;
+}
+
+.blog-bar{
+	background-color: #A8B0BC;
+}
+
+.blog-content-container{
+	padding-top: 1.5rem;
+	background-color: #28282C;
+	margin: 0;
+}
+
+.blog-listing-container{
+	background-color: #28282C;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+
+.blog-listing{
+	padding: 1.5rem 1rem;
+	border: 1px solid #565B68;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+.link-wrapper{
+	text-align: center;
+}
+
+.masthead-blog-page{
+	padding: 0 !important;
+	min-height: 6rem !important;
+	overflow: auto !important;
+}
