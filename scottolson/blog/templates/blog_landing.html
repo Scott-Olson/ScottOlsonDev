@@ -42,16 +42,27 @@
 	      <div class="collapse navbar-collapse" id="navbarResponsive">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item">
+<<<<<<< Updated upstream
 	            <a class="nav-link js-scroll-trigger" href="scottolson.dev/#about">About</a>
+=======
+	            <a class="nav-link js-scroll-trigger" href="{% url 'index' %}/#about">About</a>
+>>>>>>> Stashed changes
 	          </li>
 	          <li class="nav-item">
-	            <a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/#portfolio-tag">Portfolio</a>
+	            <a class="nav-link js-scroll-trigger" href="{% url 'index' %}/#portfolio-tag">Portfolio</a>
 	          </li>
 	          <li class="nav-item">
+<<<<<<< Updated upstream
 	            <a class="nav-link js-scroll-trigger" href="scottolson.dev/#contact">Contact</a>
 	          </li>
 	          <li class="nav-item">
 	            <a class="nav-link js-scroll-trigger" href="scottolson.dev/blog/">Blog</a>
+=======
+	            <a class="nav-link js-scroll-trigger" href="{% url 'index' %}/#contact">Contact</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link js-scroll-trigger" href="{% url 'index' %}/blog/">Blog</a>
+>>>>>>> Stashed changes
 	          </li>
 	        </ul>
 	      </div>
@@ -78,7 +89,7 @@
 		        <h5 class="col-12 text-dark mx-auto">{{ blog.summary }}</h5>
 		    </div>
 		    <div class="card-img-right d-inline-block col-lg-3 col-md-3 col-sm-12 img-square-wrapper my-auto align-middle align-self-center">
-			    <img class="card-img-right img-thumbnail align-middle" src="{{ blog.get_thumbnail_url }}{{ blog.thumbnail }}">
+			    <img class="card-img-right img-thumbnail align-middle" src="192.155.81.156:8000/media/{{ blog.thumbnail }}">
 			</div>
 	      </div>
 	    {% endfor %}

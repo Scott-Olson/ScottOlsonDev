@@ -28,11 +28,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config['DEBUG']
+DEBUG = True
 
 ALLOWED_HOSTS = ['scottolson.dev', '192.155.81.156', 'localhost', '127.0.0.1']
 
-SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False
+
 
 # Application definition
 
@@ -63,9 +64,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
 
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 
 ROOT_URLCONF = 'scottolson.urls'
 
