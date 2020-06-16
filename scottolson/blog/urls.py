@@ -7,3 +7,5 @@ urlpatterns = [
 	path('', views.landing, name='landing'),
 	path('<slug:slug>/', views.get_blog_by_slug, name="detail")
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
