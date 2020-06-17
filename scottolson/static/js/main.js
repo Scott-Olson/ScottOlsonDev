@@ -3,7 +3,7 @@
 //   $('nav').toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 // });
 
-var clipboard = new ClipboardJS('.btn');
+var clipboard = new ClipboardJS('.btnClip');
 
 clipboard.on('success', function(e) {
     console.info('Action:', e.action);
