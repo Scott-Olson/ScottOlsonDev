@@ -88,6 +88,12 @@ canvas {
   max-width: 50%;
 }
 
+#copyLinkButton{
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
 
 /* ---- stats.js ---- */
 /*.count-particles {
