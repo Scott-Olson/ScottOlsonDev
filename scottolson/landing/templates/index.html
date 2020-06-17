@@ -168,13 +168,8 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a id="emailLink" href="#contact">scotteolson3@gmail.com</a>
-                <form>
-                  <input type="text" class="form-control" style="display: none;" value="scotteolson3@gmail.com" id="copy-input">
-                  <button type="button" class="btn btn-link" style="background: transparent; outline: none; display: inline-block;" id="copy-button" data-toggle="tooltip" data-placement="button" title="Coppy to Clipboard">
-                    <i class="far fa-clipboard"></i>
-                  </button>
-                </form>
+                <!-- <a id="emailLink" href="#contact">scotteolson3@gmail.com</a> -->
+                <button id="emailLink" class="btn btn-link" data-clipboard-text="scotteolson3@gmail.com">scotteolson3@gmail.com</button>
               </div>
             </div>
           </div>
@@ -238,6 +233,7 @@
   <!-- Plugin JavaScript -->
   <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="{% static 'js/grayscale.js' %}"></script>
