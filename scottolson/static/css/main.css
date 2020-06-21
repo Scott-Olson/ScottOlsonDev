@@ -88,6 +88,10 @@ canvas {
   max-width: 50%;
 }
 
+.btnClip{
+  border: none;
+  background: none;
+}
 
 /* ---- stats.js ---- */
 /*.count-particles {
