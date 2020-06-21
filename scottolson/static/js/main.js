@@ -19,7 +19,7 @@ clipboard.on('error', function(e) {
 });
 
 function copiedToClipboard() {
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("copyLinkButton");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
