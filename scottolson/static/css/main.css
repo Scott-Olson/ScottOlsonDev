@@ -94,13 +94,7 @@ canvas {
   box-shadow: none;
 }
 
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
+#copyLinkButton .tooltiptext {
   visibility: hidden;
   width: 140px;
   background-color: #555;
@@ -117,7 +111,7 @@ canvas {
   transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+#copyLinkButton .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -128,7 +122,7 @@ canvas {
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+#copyLinkButton:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
