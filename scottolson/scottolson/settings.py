@@ -28,9 +28,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['scottolson.dev', '45.79.66.30', 'localhost', '127.0.0.1', 'django-server']
+ALLOWED_HOSTS = ['scottolson.dev', '45.79.66.30', 'localhost', '127.0.0.1', 'sodev']
 
 SESSION_COOKIE_SECURE = False
 
