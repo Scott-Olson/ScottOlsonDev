@@ -32,7 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['www.scottolson.dev', '45.79.66.30', 'localhost', '127.0.0.1', 'sodev']
 
-SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = True
 
 
 # Application definition
@@ -64,9 +64,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = True
 
-SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT = True
 
 ROOT_URLCONF = 'scottolson.urls'
 
