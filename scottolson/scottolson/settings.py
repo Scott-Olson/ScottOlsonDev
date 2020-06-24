@@ -159,9 +159,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # media url used to deliver images to pages joined onto web urls for the call
 
+MEDIA_URL = '/media/'
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_URL = '/media/'
+
 
 
 MARKDOWNX_MEDIA_PATH = datetime.datetime.now().strftime('markdownx/%Y/%m/%d')

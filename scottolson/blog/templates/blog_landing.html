@@ -78,7 +78,7 @@
 		        <h5 class="col-12 text-dark mx-auto">{{ blog.summary }}</h5>
 		    </div>
 		    <div class="card-img-right d-inline-block col-lg-3 col-md-3 col-sm-12 img-square-wrapper my-auto align-middle align-self-center">
-			    <img class="card-img-right img-thumbnail align-middle" src="media/{{ blog.thumbnail }}">
+			    <img class="card-img-right img-thumbnail align-middle" src="{{ blog.thumbnail.url }}">
 			</div>
 	      </div>
 	    {% endfor %}
