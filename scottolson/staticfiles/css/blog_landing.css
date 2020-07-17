@@ -25,13 +25,13 @@
 
 .blog-listing-container{
 	background-color: #28282C;
-	padding-top: 3rem;
+	padding-top: 1rem;
 	padding-bottom: 3rem;
 }
 
 .blog-listing{
-	padding: 1rem 1rem;
-	border: 1px solid white;
+	padding: 1.5rem 1rem;
+	border: 1px solid #565B68;
 	margin-top: 1rem;
 	margin-bottom: 0.5rem;
 }
