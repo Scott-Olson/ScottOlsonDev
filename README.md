@@ -1,4 +1,6 @@
 # ScottOlsonDev v1.0
+[ScottOlson.Dev](https://scottolson.dev)
+
 Personal website repo
 
 Django personal site. Will include a landing for projects and contact info.
